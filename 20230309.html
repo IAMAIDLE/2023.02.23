@@ -1,16 +1,19 @@
 <style>
  #result1 {
- 	background-image: url(https://media.gq.com.tw/photos/63a2bcce7b4466f8546e797c/master/w_1600%2Cc_limit/shuhua04.png);
  	background-color: red;
     width: 100px;
     height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
  }
  #result2 {
- 	background-image: url(https://media.gq.com.tw/photos/63a2bcce7b4466f8546e797c/master/w_1600%2Cc_limit/shuhua04.png);
- 	background-size: 500px 300px;
  	background-color: blue;
-    width: 1000px;
-    height: 1000px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
  }
 
 
@@ -22,14 +25,24 @@
 <div id='result2'>
 </div>
 
+<div>
+   <label for="x">日本</label>
+   <input type="number" name="x" id="x">
+   <br>
+   <label for="y">韓國</label>
+   <input type="number" name="y" id="y">
+   <br>
+   <button id="btn">顯示投票結果</button>
+</div>
+
 <script>
 let message = "hello";
 
-let x = 1;
-let y = 3.1415;
-let z= x < y;
-document.querySelect("#result1").innerText = x;
-document.querySelect("#result1").innerText = y;
+let x = "日本";
+let y = "韓國";
+
+document.querySelector("#result1").innerText = x;
+document.querySelector("#result2").innerText = y;
 
 
 
