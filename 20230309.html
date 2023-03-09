@@ -39,11 +39,11 @@
 <script>
 let message = "hello";
 
-let x = "日本";
-let y = "韓國";
+let x = "日本<img src='https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/16/a6/88/con-la-primavera-in-giappone.jpg?w=700&h=-1&s=1' width='50' height='50'>";
+let y = "韓國<img src='https://cc.tvbs.com.tw/img/upload/2021/10/14/20211014175517-6b2ba8b4.jpg' width='50' height='50'> ";
 
-document.querySelector("#result1").innerText = x;
-document.querySelector("#result2").innerText = y;
+document.querySelector("#result1").innerHTML = x;
+document.querySelector("#result2").innerHTML = y;
 
 function show() {
    let result_x = document.querySelector("#x").value;
