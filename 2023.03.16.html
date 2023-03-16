@@ -40,7 +40,7 @@
 </head>
 <body>
 
-<div class="GIDLE">舒華<iframe width="560" height="315" src="https://www.youtube.com/embed/w3qm1mXLb04?start=21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  <img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2023/02/15/0/20201213.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=1050&exp=3600/330px-Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg" width="100" height="100">
+<div class="GIDLE">舒華<iframe width="560" height="315" src="https://www.youtube.com/embed/w3qm1mXLb04?start=21" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  <img id="a_image" src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2023/02/15/0/20201213.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=1050&exp=3600/330px-Jin_for_BTS_5th_anniversary_party_in_LA_photoshoot_by_Dispatch%2C_May_2018_08.jpg" width="100" height="100">
 
 <video width="200" controls>
   <source src="360.mp4" type="video/mp4">
@@ -60,8 +60,15 @@ Your browser does not support the audio element.
 
 <script>
   let a = ['https://media.vogue.com.tw/photos/5fa24f0a484227f0bbc18bc8/master/w_1600%2Cc_limit/Shot%25207%2520Photo%2520Credit_%2520Dave%2520Meyers.jpg', 'https://media.glamourmagazine.co.uk/photos/62b0459761cc1b0415cd5a4d/1:1/w_1920,h_1920,c_limit/ARIANA%20GRANDE%20BANGS%20200622%20default-sq-GettyImages-1236901325.jpg'];
+  let count = 0;
 
-  
+  setInterval(
+    function(){
+      document.querySelector("#a_image").src=a[count%2];
+      count = count + 1;
+    },
+    3000
+    );
 </script>
 </body>
 </html>
