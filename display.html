@@ -14,11 +14,13 @@
    	 要準備期中報告了
    	     </div>
 
-   	     
+
    	<div class="Gidle">
    	<img src="https://www.billboard.com/wp-content/uploads/2022/10/GIDLE-I-love-Publicity-Photo-2022-billboard-1548.jpg" WIDTH="200" HEIGHT="200">
     </div>
-    	
+    	<button class="Gidle">
+    		<img src="https://pbs.twimg.com/media/Fd4Cd0xUcAAZxJB.jpg" width="100" height="100">
+    	</button>
 
    	<script type="text/javascript">
    		function hide() {
@@ -28,10 +30,16 @@
    			document.querySelector(".news_title").style.display="block";
    		}
    		function hideGidle() {
-   			document.querySelector(".Gidle").style.display="none";
+   		  let elements = document.querySelectorAll(".Gidle");
+   		  for(let i = 0; i < elements.length; i=i+1){
+   		  	elements[i].style.display = "none";
+   		  }
    		}
    		function showGidle() {
-   			document.querySelector(".Gidle").style.display="block";
+   			let elements = document.querySelectorAll(".Gidle");
+   		  for(let i = 0; i < elements.length; i=i+1){
+   		  	elements[i].style.display = "block";
+   		  }
    		}
    	</script>
 
