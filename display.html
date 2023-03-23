@@ -1,48 +1,77 @@
 <html>
 <head>
 	<title>顯示與隱藏</title>
+
+	<style>
+	   .korea img{
+	   	      width: 100px;
+	   	      height: 100px;
+	   }	
+	  .japan img{
+	   	      width: 70px;
+	   	      height: 70px;
+	   }	
+	  .taiwan img{
+	   	      width: 100px;
+	   	      height: 100px;
+	   }	
+	  
+	   .korea{
+	   	      display: inline-block;
+	   }
+	</style>
 </head>
 
 <body>
-   <button onclick="hide();">隱藏文字</button>
-   <button onclick="show();">顯示文字</button>
-   <button onclick="hideGidle();">隱藏Gidle</button>
-   <button onclick="showGidle();">顯示Gidle</button>
-   <div class="news_title">
-   	     第六周上課
-   	 </br>
-   	 要準備期中報告了
-   	     </div>
+	<button onclick="hide();">隱藏文字</button>
+	<button onclick="show();">顯示文字</button>
+	<button onclick="hideGidle();">隱藏Gidle</button>
+	<button onclick="showGidle();">顯示Gidle</button>
+	<div class="news_title">
+		第六周上課
+	</br>
+	要準備期中報告了
+</div>
 
 
-   	<div class="Gidle">
-   	<img src="https://www.billboard.com/wp-content/uploads/2022/10/GIDLE-I-love-Publicity-Photo-2022-billboard-1548.jpg" WIDTH="200" HEIGHT="200">
-    </div>
-    	<button class="Gidle">
-    		<img src="https://pbs.twimg.com/media/Fd4Cd0xUcAAZxJB.jpg" width="500" height="500">
-    		<img src="https://en.kepoper.com/wp-content/uploads/2022/03/gidle-member-profile-facts-tmi.jpg" width="500" height="500">
-    	</button>
+<div class="Gidle korea">
+	<img src="https://www.billboard.com/wp-content/uploads/2022/10/GIDLE-I-love-Publicity-Photo-2022-billboard-1548.jpg" WIDTH="200" HEIGHT="200">
+</div>
+<button class="Gidle korea">
 
-   	<script type="text/javascript">
-   		function hide() {
-   			document.querySelector(".news_title").style.display="none";
-   		}
-   		function show() {
-   			document.querySelector(".news_title").style.display="block";
-   		}
-   		function hideGidle() {
-   		  let elements = document.querySelectorAll(".Gidle");
-   		  for(let i = 0; i < elements.length; i=i+1){
-   		  	elements[i].style.display = "none";
-   		  }
-   		}
-   		function showGidle() {
-   			let elements = document.querySelectorAll(".Gidle");
-   		  for(let i = 0; i < elements.length; i=i+1){
-   		  	elements[i].style.display = "block";
-   		  }
-   		}
-   	</script>
+	<img src="https://en.kepoper.com/wp-content/uploads/2022/03/gidle-member-profile-facts-tmi.jpg" width="200" height="200">
+</button>
+
+<div class="twice korea">
+     <img src="https://img.ltn.com.tw/Upload/style/page/2023/03/06/230306-24520-1-4OWtF.jpg" width="200" height="200">	
+</div>
+<div class="yoasobi japan">
+		<img src="https://cdn.hk01.com/di/media/images/dw/20220330/585898691999567872274983.jpeg/Q50xXOaC66iSlwL90djTZxDWvxd1vvMOUeA4aFHgOGg?v=w1920">
+</div>
+<div class="gaofivepeople taiwan">
+		<img src="https://www.teclandart.tw/images/2020/05/2021teclandart-06.jpg">
+		</div>		
+
+<script type="text/javascript">
+	function hide() {
+		document.querySelector(".news_title").style.display="none";
+	}
+	function show() {
+		document.querySelector(".news_title").style.display="block";
+	}
+	function hideGidle() {
+		let elements = document.querySelectorAll(".Gidle");
+		for(let i = 0; i < elements.length; i=i+1){
+			elements[i].style.display = "none";
+		}
+	}
+	function showGidle() {
+		let elements = document.querySelectorAll(".Gidle");
+		for(let i = 0; i < elements.length; i=i+1){
+			elements[i].style.display = "block";
+		}
+	}
+</script>
 
 </body>
 
