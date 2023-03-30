@@ -349,8 +349,13 @@
 		}
 		document.querySelector("body").style.backgroundImage="url(https://www.mirrormedia.com.tw/assets/images/20181107153913-9c74bae632e22a175a74af373dbc9b62-mobile.jpg)";
 	}
-		window.addEventListener("click",function(){
-		document.querySelector("#backgroundVideo").play();
+		window.addEventListener("click", function(){
+		let video = document.querySelector("#backgroundVideo");
+		if (video.paused) {
+			video.play();
+		} else {
+			video.pause();
+		}
 	});
 </script>
 </body>
