@@ -33,12 +33,22 @@
 			left:0px;
 			z-index:-1;
 		}
+		.backgroundImage video{
+			width: 140vw;
+			height: 150vh;
+			position:fixed;
+			top:0px;
+			left:-200px;
+		}
 	</style>
 </head>
 
 <body>
 
 	<div class="backgroundImage">
+		<video id="backgroundVideo">
+			<source src="background.mp4" type="video/mp4">
+			</video>
 	</div>
 	
 
@@ -331,6 +341,9 @@
 		}
 		document.querySelector("body").style.backgroundImage="url(https://www.mirrormedia.com.tw/assets/images/20181107153913-9c74bae632e22a175a74af373dbc9b62-mobile.jpg)";
 	}
+		window.addEventListener("click",function(){
+		document.querySelector("#backgroundVideo").play();
+	});
 </script>
 </body>
 
