@@ -113,29 +113,6 @@
 	
 
 
-	<div class="news_title">
-		<h1>5566</h1>
-		<p>5566是一個由5名成員組成的台灣男子團體，於2002年1月21日出道。5566名稱原意為「5位團員，6大領域」期許團內五位成員於演藝界的六大領域（唱片、主持、戲劇、電影、廣告、舞台）皆有收穫與發展，現任團員為孫協志、王仁甫、許孟哲。1
-			<button onclick="hideFivefivesixsix();">隱藏5566</button>
-			<button onclick="showFivefivesixsix();">顯示5566</button>
-			<div class="bands">
-
-
-				<div class="fivefivesixsix taiwan">
-					<img src="https://images.chinatimes.com/newsphoto/2020-11-20/656/20201120005168.jpg">
-				</div>
-			</div>
-		</p>
-	</div>
-
-
-	
-
-
-	
-
-
-
 
 <div class="bands">
 	<div class="yoasobi japan">
@@ -178,6 +155,7 @@
 			elements[i].style.display = "inline-block";
 		}
 		document.querySelector("body").style.backgroundImage="url(https://upload.wikimedia.org/wikipedia/commons/c/cc/NewJeans_theMEGASTUDY.jpg)";
+		document.querySelector("#backgroundVideo").src="s.mp4";
 	}
 
 	function hideSeventeen() {
@@ -194,6 +172,8 @@
 			elements[i].style.display = "inline-block";
 		}
 		document.querySelector("body").style.backgroundImage="url(https://images.chinatimes.com/newsphoto/2021-11-14/656/20211114000957.jpg)";
+				document.querySelector("#backgroundVideo").src="7rings.mp4";
+
 	}
 
 
@@ -211,6 +191,8 @@
 			elements[i].style.display = "inline-block";
 		}
 		document.querySelector("body").style.backgroundImage="url(https://www.mirrormedia.com.tw/assets/images/20181107153913-9c74bae632e22a175a74af373dbc9b62-mobile.jpg)";
+				document.querySelector("#backgroundVideo").src="boy.mp4";
+
 	}
 		window.addEventListener("click", function(){
 		let video = document.querySelector("#backgroundVideo");
